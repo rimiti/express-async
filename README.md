@@ -1,5 +1,6 @@
 # express-async
 
+[![Build Status][travis-badge]][travis]
 [![Dependencies][prod-dependencies-badge]][prod-dependencies]
 [![MIT License][license-badge]][LICENSE]
 [![PRs Welcome][prs-badge]][prs]
@@ -30,6 +31,8 @@ MIT © [Dimitri DO BAIRRO](https://github.com/rimiti/express-async/blob/master/L
 
 [prod-dependencies-badge]: https://david-dm.org/rimiti/express-async/status.svg
 [prod-dependencies]: https://david-dm.org/rimiti/express-async
+[travis-badge]: https://travis-ci.org/rimiti/express-async.svg?branch=master
+[travis]:https://travis-ci.org/rimiti/express-async
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [license]: https://github.com/rimiti/express-async/blob/master/LICENSE
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
