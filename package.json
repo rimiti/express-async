@@ -1,0 +1,28 @@
+{
+  "name": "@rimiti/express-async",
+  "version": "0.0.0",
+  "description": "Async wrapper for express functions.",
+  "main": "dist/index.js",
+  "repository": "git@github.com:rimiti/express-async.git",
+  "author": "Dimitri DO BAIRRO <dimitri.dobairro@dimsolution.com>",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/node": "^10",
+    "prettier": "^1.15.3",
+    "rimraf": "^2.6.3",
+    "tslint": "5.12.1",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-microsoft-contrib": "^6.0.0",
+    "typescript": "^3.2.2"
+  },
+  "scripts": {
+    "clean": "rimraf build tmp",
+    "build": "tsc -p tsconfig.release.json",
+    "build:watch": "tsc -w -p tsconfig.release.json",
+    "lint": "tslint -t stylish --project 'tsconfig.json'",
+    "lint:fix": "tslint --fix -t stylish --project 'tsconfig.json'",
+    "prepublish": "npm run clean && npm run build"
+  }
+}
