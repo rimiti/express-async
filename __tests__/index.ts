@@ -61,7 +61,7 @@ describe("wrapAsync", () => {
     let thenable: {
       then(): void;
     };
-    let triggerFailure: (error) => void;
+    let triggerFailure: (error: Error) => void;
     const registeringThenable = new Promise((resolve: () => void) => {
       thenable = {
         // @ts-ignore
@@ -78,7 +78,7 @@ describe("wrapAsync", () => {
     expect(thenable.then).toHaveBeenCalled();
     expect(next).not.toHaveBeenCalled();
     triggerFailure(error);
-    await catchingThenable;
+    await catchingThenable; // tslint:disable-line:no-unsafe-any
     expect(next).toHaveBeenCalledWith(error);
   });
 });
