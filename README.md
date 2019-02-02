@@ -9,6 +9,38 @@
 
 Async wrapper for express functions.
 
+## How to use it?
+
+### Importation
+
+From commonJS
+
+```js
+const {wrapAsync} = require('@rimiti/express-async');
+```
+
+or from ES6:
+
+```js
+import {wrapAsync} from '@rimiti/express-async';
+```
+
+### Example
+
+```js
+import express from 'express';
+import {wrapAsync} from '@rimiti/express-async';
+
+const app = express();
+app.get('/example-1', wrapAsync(async function read(req, res, next) {
+  res.status(200).send({example: 1});
+}));
+
+app.get('/example-2', wrapAsync(async function read(req, res) {
+  res.status(200).send({example: 2});
+}));
+```
+
 ## Install
 
 ```bash
