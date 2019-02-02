@@ -1,0 +1,7 @@
+.idea
+.editorconfig
+.gitignore
+.prettierrc
+tsconfig.json
+tsconfig.release.json
+tslint.json
