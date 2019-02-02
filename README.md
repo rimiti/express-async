@@ -25,6 +25,11 @@ Run using yarn run `<script>` command.
     lint        - Lint source files.
     lint:fix    - Lint source files and auto-fix.
 
+## Credits
+
+This package has been inspired by [express-async-handler](https://github.com/Abazhenov/express-async-handler) but 
+it has been totally rewrited in TypeScript.
+
 ## License
 
 MIT © [Dimitri DO BAIRRO](https://github.com/rimiti/express-async/blob/master/LICENSE)
