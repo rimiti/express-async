@@ -6,16 +6,22 @@
   "repository": "git@github.com:rimiti/express-async.git",
   "author": "Dimitri DO BAIRRO <dimitri.dobairro@dimsolution.com>",
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@types/express": "*",
+    "@types/jest": "^23.3.13",
     "@types/node": "^10",
+    "jest": "^24.0.0",
     "prettier": "^1.15.3",
     "rimraf": "^2.6.3",
+    "ts-jest": "^23.10.5",
     "tslint": "5.12.1",
     "tslint-config-prettier": "^1.17.0",
     "tslint-microsoft-contrib": "^6.0.0",
     "typescript": "^3.2.2"
+  },
+  "peerDependencies": {
+    "express": "*"
   },
   "scripts": {
     "clean": "rimraf build tmp",
@@ -23,6 +29,8 @@
     "build:watch": "tsc -w -p tsconfig.release.json",
     "lint": "tslint -t stylish --project 'tsconfig.json'",
     "lint:fix": "tslint --fix -t stylish --project 'tsconfig.json'",
-    "prepublish": "npm run clean && npm run build"
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
   }
 }
