@@ -32,11 +32,11 @@ import express from 'express';
 import {wrapAsync} from '@rimiti/express-async';
 
 const app = express();
-app.get('/example-1', wrapAsync(async function read(req, res, next) {
+app.get('/example-1', wrapAsync(async function example1(req, res, next) {
   res.status(200).send({example: 1});
 }));
 
-app.get('/example-2', wrapAsync(async function read(req, res) {
+app.get('/example-2', wrapAsync(async function example2(req, res) {
   res.status(200).send({example: 2});
 }));
 ```
