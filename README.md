@@ -9,6 +9,12 @@
 
 Async wrapper for express functions.
 
+## Install
+
+```bash
+$ npm i @rimiti/express-async -S
+```
+
 ## How to use it?
 
 ### Importation
@@ -39,12 +45,6 @@ app.get('/example-1', wrapAsync(async function example1(req, res, next) {
 app.get('/example-2', wrapAsync(async function example2(req, res) {
   res.status(200).send({example: 2});
 }));
-```
-
-## Install
-
-```bash
-$ npm i @rimiti/express-async -S
 ```
 
 ## Scripts
